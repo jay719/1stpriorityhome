@@ -1,0 +1,16 @@
+#services {
+  height: 100%;
+}
+#services-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+.service-card {
+  display: flex;
+  flex-direction: column;
+}
+.service-title {
+  display: flex;
+  justify-content: center;
+}
