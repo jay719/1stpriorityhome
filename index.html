@@ -2,7 +2,7 @@
   <head>
     <!-- need to declare title and  link stylesheet in head -->
     <title>1stPriorityHome</title>
-    <link href="./resources/css/styles.css" type="text/css" rel="stylesheet" />
+    <link href="./resources/css/styles.scss" type="text/css" rel="stylesheet" />
     <link href="./resources/css/contact.css" type="text/css" rel="stylesheet" />
     <link href="./resources/css/welcome.css" type="text/css" rel="stylesheet" />
     <link
@@ -10,59 +10,93 @@
       type="text/css"
       rel="stylesheet"
     />
+    <link href="./resources/css/header.css" type="text/css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
       rel="stylesheet"
     />
+    
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&family=Open+Sans&display=swap" rel="stylesheet">
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <script src="./resources/javascript/index.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <body>
     <div class="home">
       <header>
-        <div class="logo-container">
-          <h3 class="logo-text">1STPRIORITYHOME</h3>
+        <div class="socials-bar">
+          <div class="header-phone-num">Phone: 719-352-4934</div>
+          <div class="header-buttons">
+            <div class="header-btn-container">
+             1stpriorityhomeimprovement@gmail.com 
+            </div>
+            <div class="header-btn-container">
+              <i
+                class="fa fa-instagram"
+                style="font-size: 24px; color: white"
+              ></i>
+            </div>
+            
+            <div class="header-btn-container">
+              <i
+                class="fa fa-facebook"
+                style="font-size: 24px; color: white"
+              ></i>
+            </div>
+          </div>
         </div>
-        <div class="header-buttons">
-          <div class="header-btn-container">
-            <a href="#welcome"><h4>Home</h4></a>
+        <div class="second-header-bar">
+          <div class="logo-container">
+            <img src="./resources/images/logo/1stPrioTransparent.png" class="logo-img"></img>
           </div>
-          <div class="header-btn-container">
-            <a href="#about"><h4>About</h4></a>
-          </div>
-          <div class="header-btn-container">
-            <a href="#services"><h4>Services</h4></a>
-          </div>
-          <div class="header-btn-container">
-            <a href="#contact"><h4>Contact</h4></a>
+          <div class="header-buttons">
+            <div class="header-btn-container">
+              <a href="#welcome"><h4>Home</h4></a>
+            </div>
+            <div class="header-btn-container">
+              <a href="#about"><h4>About</h4></a>
+            </div>
+            <div class="header-btn-container">
+              <a href="#services"><h4>Services</h4></a>
+            </div>
+            <div class="header-btn-container">
+              <a href="#contact"><h4>Contact</h4></a>
+            </div>
           </div>
         </div>
       </header>
-      <div class="screen" id="welcome"><h1>Welcome</h1></div>
+      <!-- make welcome a slide show -->
+      <div class="screen" id="welcome"><div class="welcome-text"><h1>Your Home</h1><p>is our 1ST Priority</p></div></div>
       <div class="screen" id="about">
-        <h2>About Us</h2>
-        <p>
-          We have a team of experienced and skilled professionals who work
-          closely with our clients to understand their needs and provide
-          customized solutions that meet their specific requirements. From the
-          initial design phase to the final construction, our team is dedicated
-          to ensuring that every aspect of the project is completed to the
-          highest standards.
-        </p>
+        <div id="about-description"> 
+          <h2>Helping Colorado Communities Everyday</h2>
+          <h3>
+            <i>Our Mission and Services</i>
+          </h3>
+
+     
+        <p>Over the years, I’ve had the opportunity to work on a number of incredible projects that have allowed me to grow and establish myself within this competitive industry. I hope you’ll enjoy viewing my projects as much as I enjoyed working on them. Go ahead and explore, and don’t hesitate to reach out if you’d like to learn more. We also subcontract drywall. Framing, windows, and concrete. We also do cleaning services!</p>
+      </div>
+       
       </div>
       <div class="screen" id="services">
         <div id="services-container">
           <div class="service-card">
-            <img src="" alt="Service Image One" />
-            <h3 class="service-title">Home Improvement</h3>
+            <img  class="service-image" src="./resources/images/misc/lawn.jpg" alt="Service Image One" />
+            <h3 class="service-title">Lawn Improvement</h3>
             <p class="service-paragraph">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua
             </p>
           </div>
           <div class="service-card">
-            <img src="" alt="Service Image Two" />
+            <img  class="service-image" src="./resources/images/misc/flamingo.jpg" alt="Service Image Two" />
             <h3 class="service-title">Electical Work</h3>
             <p class="service-paragraph">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -70,8 +104,8 @@
             </p>
           </div>
           <div class="service-card">
-            <img class="service-image" src="" alt="Service Image Three" />
-            <h3 class="service-title">Lanscaping</h3>
+            <img class="service-image" src="./resources/images/misc/flamingo.jpg" alt="Service Image Three" />
+            <h3 class="service-title">Landscaping</h3>
             <p class="service-paragraph">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua
@@ -81,37 +115,46 @@
       </div>
       <div class="screen" id="contact">
         <div id="contact-card">
+          <div class="contact-left">
+            <div class="info-section">
+               <h1 class="contact-title">GIVE US A CALL FOR A FREE ESTIMATE!</h1>
+            <p>Interested in learning more about me, my work or how we can collaborate on an upcoming project? Feel free to reach out anytime, I would be more than happy to chat</p>
+            <p> 1stpriorityhome@gmail.com</p>
+            <p>719-352-4934</p>
+          </div>
           <div id="contact-form">
             <form>
-              <label for="name">Name:</label>
-              <input type="text" id="name" name="name" required /><br /><br />
+              <label for="name">Name</label>
+              <input class="input-field" type="text" id="name" name="name" required /><br /><br />
 
-              <label for="company">Company:</label>
-              <input type="text" id="company" name="company" /><br /><br />
+              <label for="company">Company</label>
+              <input class="input-field" type="text" id="company" name="company" /><br /><br />
 
-              <label for="phone">Phone number:</label>
-              <input type="tel" id="phone" name="phone" /><br /><br />
+              <label for="phone">Phone number</label>
+              <input class="input-field" type="tel" id="phone" name="phone" /><br /><br />
 
-              <label for="email">Email:</label>
+              <label for="email">Email</label>
               <input
+              class="input-field"
                 type="email"
                 id="email"
                 name="email"
                 required
               /><br /><br />
 
-              <input type="submit" value="Submit" />
+              <input class="input-submit" type="submit" value="Submit" />
             </form>
-          </div>
-          <div id="info-section">
-            <h1>Contact Us</h1>
-            <p>Feel free to contact us directly with our information below</p>
-            <h2>Address: 9878 Construction Drive Avenue 11th Str.</h2>
-            <h2>Phone: +999-999-9999</h2>
-            <h2>Email: 1stpriorityhome@gmail.com</h2>
+          </div></div>
+          <div class="contact-right">
+            <img  class="contact-image" src="./resources/images/misc/flamingo.jpg" alt="Service Image One" />
+
           </div>
         </div>
       </div>
+      <footer>
+        <p>
+          ©2023 by 1st Priority Home Improvements LLC</p>
+      </footer>
     </div>
   </body>
 </html>
