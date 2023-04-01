@@ -1,11 +1,17 @@
 #welcome {
   display: flex;
-  /* flex-direction: column; */
+  /* flex-direction: ; */
   height: 50vh;
   justify-content: center;
   align-items: center;
-  background-color: aquamarine;
-  background-image: url("https://loveincorporated.blob.core.windows.net/contentimages/gallery/2389c1f4-1775-4a42-a0b5-126d3c7d6aa6-high-altitude-homes-for-sale-evergreen-co.jpg");
+  /* background-color: aquamarine; */
+  /* background-image: url("../images/misc/stone-steps.jpg"); */
+}
+.welcome-img {
+  /* background-size: cover; */
+  position: absolute;
+  height: 50%;
+  width: 99%;
 }
 .welcome-text {
   background-color: #0000009c;
@@ -13,6 +19,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: absolute;
+  z-index: 10000;
+  color: white;
+  width: 99%;
 }
 #welcome h1 {
   color: white;

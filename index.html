@@ -13,13 +13,8 @@
     <link href="./resources/css/header.css" type="text/css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
-      rel="stylesheet"
-    />
-    
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&family=Open+Sans&display=swap" rel="stylesheet">
-
+  
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -31,10 +26,15 @@
     <div class="home">
       <header>
         <div class="socials-bar">
-          <div class="header-phone-num">Phone: 719-352-4934</div>
+          <a class="header-phone-num" href="mailto:john@example.com">1stpriorityhomeimprovement@gmail.com</a>
+         
           <div class="header-buttons">
+            <a  class="header-phone-num" href="tel:7193524934">719-352-4934</a>
             <div class="header-btn-container">
-             1stpriorityhomeimprovement@gmail.com 
+              <i
+                class="fa fa-facebook"
+                style="font-size: 22px; color: white"
+              ></i>
             </div>
             <div class="header-btn-container">
               <i
@@ -42,13 +42,7 @@
                 style="font-size: 24px; color: white"
               ></i>
             </div>
-            
-            <div class="header-btn-container">
-              <i
-                class="fa fa-facebook"
-                style="font-size: 24px; color: white"
-              ></i>
-            </div>
+          
           </div>
         </div>
         <div class="second-header-bar">
@@ -72,12 +66,19 @@
         </div>
       </header>
       <!-- make welcome a slide show -->
-      <div class="screen" id="welcome"><div class="welcome-text"><h1>Your Home</h1><p>is our 1ST Priority</p></div></div>
+      <div class="screen" id="welcome">
+        <img class="welcome-img" src="./resources/images/misc/stone-steps.jpg" />
+        <div class="welcome-text">
+          <h2 style="font-size: 72px;">1ST PRIORITY HOME IMPROVEMENTS LLC
+          </h2>
+        </div> 
+      </div>
       <div class="screen" id="about">
         <div id="about-description"> 
-          <h2>Helping Colorado Communities Everyday</h2>
-          <h3>
-            <i>Our Mission and Services</i>
+          <!-- <h2 style="font-size: 72px;">1ST PRIORITY HOME IMPROVEMENTS LLC
+          </h2> -->
+          <h3 style="font-size: 23px;">
+            Our Mission and Services
           </h3>
 
      
@@ -97,7 +98,7 @@
           </div>
           <div class="service-card">
             <img  class="service-image" src="./resources/images/misc/flamingo.jpg" alt="Service Image Two" />
-            <h3 class="service-title">Electical Work</h3>
+            <h3 class="service-title">Electrical Work</h3>
             <p class="service-paragraph">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua
@@ -119,7 +120,9 @@
             <div class="info-section">
                <h1 class="contact-title">GIVE US A CALL FOR A FREE ESTIMATE!</h1>
             <p>Interested in learning more about me, my work or how we can collaborate on an upcoming project? Feel free to reach out anytime, I would be more than happy to chat</p>
-            <p> 1stpriorityhome@gmail.com</p>
+            <p> 2928 Main St
+              Colorado Springs, CO  80907</p>
+            <p>Office Hours: Mon - Fri 7am - 6pm</p>
             <p>719-352-4934</p>
           </div>
           <div id="contact-form">
@@ -152,8 +155,10 @@
         </div>
       </div>
       <footer>
+      
         <p>
           ©2023 by 1st Priority Home Improvements LLC</p>
+          <p></p>
       </footer>
     </div>
   </body>
