@@ -18,7 +18,7 @@ body {
 }
 .home {
   background-color: #fafafa;
-  /* height: 100%; */
+  max-height: fit-content;
   /* display: flex;
   flex-direction: column; */
 }
@@ -74,6 +74,9 @@ footer {
   justify-content: center;
   color: white;
   height: 3%;
+  // position: absolute;
+  // bottom: 0;
+  margin-top: 50px;
 }
 footer p {
   font-size: 15px;
@@ -81,4 +84,24 @@ footer p {
 h4 {
   color: black;
   font-size: 20px;
+}
+
+/* phone screen width */
+@media (max-width: 450px) {
+  footer {
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 576px) {
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .home .screen {
+    margin-top: 50;
+  }
+  // footer {
+  //   margin-top: 20;
+  // }
 }

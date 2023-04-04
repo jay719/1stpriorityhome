@@ -28,9 +28,25 @@
 #welcome h1 {
   color: white;
 }
+#welcome h2 {
+  font-size: 72px;
+}
 #welcome p {
   color: white;
   font-size: 3.8rem;
 }
-/* #welcome:after {
-} */
+
+/* phone screen width */
+@media (max-width: 450px) {
+  #welcome h2 {
+    font-size: 40px;
+  }
+
+  #welcome {
+  }
+}
+@media (min-width: 576px) {
+  /* #welcome h2 {
+    font-size: 40px;
+  } */
+}
